@@ -1,0 +1,73 @@
+# Maven specific files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# NetBeans specific files
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code specific files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+hs_err_pid*
+
+# Environment specific files
+.env
+
+# Build artifacts
+*.war
+*.ear
+*.jar
+
+# Coverage reports
+*.cover
+*.coverage
+*.lcov
+coverage/
+
+# Test results
+*.out
+*.report
+test-results/
+
+# IDE-generated metadata for run configurations
+*.run/
+
+# Maven wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# Package manager specific
+node_modules/
+
+# Dependency caches (useful if project has submodules or multi-module builds)
+**/.m2/
