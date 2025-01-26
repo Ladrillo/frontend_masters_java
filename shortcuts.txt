@@ -1,5 +1,5 @@
 mvn archetype:generate -DgroupId=com.example -DartifactId=foo -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
-mvn compile exec:java -Dexec.mainClass="decision_structure.SalaryCalculator"
+mvn compile exec:java -Dexec.mainClass="the_package.TheFile"
 
 mv ./* ./.* .. 2>/dev/null
