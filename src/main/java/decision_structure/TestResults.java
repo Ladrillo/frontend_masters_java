@@ -21,23 +21,14 @@ public class TestResults {
       grade = 'A';
     }
     System.out.println("Your grade is: " + grade);
-    String message;
-    switch (grade) {
-      case 'A':
-        message = "Excellent job!";
-        break;
-      case 'B':
-        message = "Good job!";
-        break;
-      case 'C':
-        message = "You can do better!";
-        break;
-      case 'D':
-        message = "You need to study more!";
-        break;
-      default:
-        message = "You failed!";
-    }
+
+    String message = switch (grade) {
+        case 'A' -> "Excellent job!";
+        case 'B' ->"Good job!";
+        case 'C' -> "You can do better!";
+        case 'D' -> "You need to study more!";
+        default -> "You failed!";
+    };
     System.out.println(message);
   }
 }
