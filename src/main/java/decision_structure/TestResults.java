@@ -27,7 +27,10 @@ public class TestResults {
         case 'B' ->"Good job!";
         case 'C' -> "You can do better!";
         case 'D' -> "You need to study more!";
-        default -> "You failed!";
+        default -> {
+          System.out.println("You totally suck...");
+          yield "You failed!";
+        }
     };
     System.out.println(message);
   }
