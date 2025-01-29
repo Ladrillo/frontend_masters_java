@@ -6,7 +6,7 @@ public class Greet {
   public static int gaga = 7;
   public static void main(String[] args) {
     String theName = doGreet();
-    System.out.println(gaga);
+    System.out.println(theName);
   }
 
   public static String doGreet() {
