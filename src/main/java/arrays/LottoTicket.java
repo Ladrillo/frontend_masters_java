@@ -9,11 +9,10 @@ public class LottoTicket {
 
     public static void main(String[] args) {
         int[] ticket = generateNumbers();
-        System.out.println("=============");
         for (int num : ticket) {
             System.out.print(num + " | ");
         }
-        System.out.println("=============");
+        System.out.print("\n");
     }
 
     public static boolean exists(int[] arr, int num) {
