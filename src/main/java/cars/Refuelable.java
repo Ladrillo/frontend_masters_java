@@ -1,5 +1,5 @@
 package cars;
 
-public interface Refuelable {
+interface Refuelable {
     void refuel(double liters);
 }

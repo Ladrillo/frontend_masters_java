@@ -1,5 +1,5 @@
 package cars;
 
-public interface Movable {
+interface Movable {
     void move(double distance);
 }
