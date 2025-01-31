@@ -1,8 +1,11 @@
 package structures;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.List;
+import java.util.Map;
 
 public class App {
     public static void main(String[] args) {
@@ -14,12 +17,20 @@ public class App {
         fruits.add("apple");
         fruits.add("banana");
         fruits.add("lemon");
+
+        var i = fruits.iterator();
+        while (i.hasNext()) {
+            System.out.println("Iterating: " + i.next());
+        }
+
         System.out.println(fruits);
         System.out.println(fruits.contains("lemon"));
         System.out.println(fruits.size());
+
         fruits.remove("lemon");
         System.out.println(fruits.contains("lemon"));
         System.out.println(fruits.size());
+
 
         List cars = new ArrayList();
         cars.add("Prius");
@@ -27,5 +38,12 @@ public class App {
         cars.add("Celica");
         System.out.println(cars);
         System.out.println(cars.get(0));
+
+        Map fruitCalories = new HashMap();
+        fruitCalories.put("lemon", 45);
+        fruitCalories.putIfAbsent("apple", 34);
+        System.out.println(fruitCalories);
+        System.out.println(fruitCalories.get("lemon"));
+        System.out.println(fruitCalories.containsKey("lemon"));
     }
 }
