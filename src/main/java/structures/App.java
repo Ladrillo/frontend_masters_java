@@ -23,6 +23,8 @@ public class App {
             System.out.println("Iterating: " + i.next());
         }
 
+        fruits.forEach(fr -> System.out.println("using foreach:  " + fr));
+
         System.out.println(fruits);
         System.out.println(fruits.contains("lemon"));
         System.out.println(fruits.size());
