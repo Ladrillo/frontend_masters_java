@@ -7,6 +7,6 @@ public class App {
         prius.refuel(67);
         prius.move(56);
         prius.move(24);
-        prius.move(11);
+        prius.move(120);
     }
 }
