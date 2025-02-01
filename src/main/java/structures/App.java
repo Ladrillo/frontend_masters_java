@@ -51,5 +51,7 @@ public class App {
         for (Map.Entry<String, Integer> calInfo : fruitCalories.entrySet()) {
             System.out.println(calInfo.getKey() + " has " + calInfo.getValue() + " calories.");
         }
+
+        fruitCalories.forEach((k, v) -> System.out.println(k + " : " + v));
     }
 }
